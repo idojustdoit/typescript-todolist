@@ -4,7 +4,7 @@ const Timer: React.FC<{ time: number }> = (props) => {
   return (
     <div className="timer">
       <span className="digits">
-        {("0" + Math.floor((props.time / 360000) % 60)).slice(-2)}:
+        {("0" + Math.floor((props.time / 3600000) % 60)).slice(-2)}:
       </span>
       <span className="digits">
         {("0" + Math.floor((props.time / 60000) % 60)).slice(-2)}:
